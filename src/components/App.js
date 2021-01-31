@@ -6,6 +6,7 @@ class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
+      name: 'junsoo',
       posts: []
     }
   }
@@ -21,8 +22,12 @@ class App extends React.Component {
 
   render(){
     return (
-      <div className="App">
-        <p>Initial Page</p>
+      <div className="main">
+        <div className="post-list"></div>
+        <div className="post-body">
+          <p>Title</p>
+          <p>Content {this.state.name}</p>
+        </div>
       </div>
     );
   }
